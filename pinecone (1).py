@@ -42,7 +42,7 @@ nltk.download('punkt')
 
 # Dosyanın bulunduğu dizini belirtin (örneğin 'data' dizininde olduğunu varsayıyorum)
 m_loader = DirectoryLoader(
-    path="data",  # Burada 'data' klasörünü belirtmelisiniz
+    path=".",  # Burada 'data' klasörünü belirtmelisiniz
     glob="ai_veriler.txt"  # Burada yalnızca ai_veriler.txt dosyasını yüklemek için glob parametresini ayarlıyoruz
 )
 docs = m_loader.load()
